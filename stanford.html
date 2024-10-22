@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/ab09901365.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Matemasie&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .nv {
+            background-color: rgb(111, 172, 176);
+
+            color: whitesmoke;
+        }
+
+        body {
+            background-color: antiquewhite;
+        }
+
+        .name {
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            position: absolute;
+            top: 10%;
+            left: 45%;
+            z-index: 1;
+        }
+
+        .marqueeText {
+            font-family: sans-serif;
+            font-weight: 900;
+            font-size: larger;
+            color: #693b00;
+        }
+
+        .about1 {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: larger;
+            font-weight: bold;
+            animation-name: about1;
+            animation-timing-function: ease-in-out;
+            animation-duration: 2s;
+            animation-timeline: view();
+            animation-range: entry 0 cover 40%;
+        }
+
+        @keyframes about1 {
+            0% {
+                transform: translate(-50%);
+            }
+
+            100% {}
+        }
+
+        .imageHover1 {
+            position: relative;
+            box-shadow: 1px 1px 2px black;
+            animation-name: image1;
+            animation-timing-function: ease-in-out;
+            animation-duration: 2s;
+            z-index: 2;
+            animation-timeline: view();
+            animation-range: entry 0 cover 40%;
+        }
+
+        @keyframes image1 {
+            0% {
+                transform: translate(100%);
+            }
+
+            100% {}
+        }
+
+        .about2 {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: larger;
+            font-weight: bold;
+            animation-name: about2;
+            animation-timing-function: ease-in-out;
+            animation-duration: 2s;
+            animation-timeline: view();
+            animation-range: entry 0 cover 40%;
+        }
+
+        @keyframes about2 {
+            0% {
+                transform: translate(50%);
+            }
+
+            100% {}
+        }
+
+        .imageHover2 {
+            position: relative;
+            box-shadow: 1px 1px 2px black;
+            animation-name: image2;
+            animation-timing-function: ease-in-out;
+            animation-duration: 2s;
+            z-index: 2;
+            animation-timeline: view();
+            animation-range: entry 0 cover 40%;
+        }
+
+        @keyframes image2 {
+            0% {
+                transform: translate(-100%);
+            }
+
+            100% {}
+        }
+
+        /* blog section */
+
+        .blogSection {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: x-large;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="p-2 flex nv justify-between items-center ">
+        
+        <h3 class="Stan"><b>STANFORD UNIVERSITY</b></h3>
+        <div id="nav-menu" class=" space-x-20 mr-36 hidden lg:flex ">
+            <a href="#hh">Home</a>
+                <a href="#aa">About</a>
+                <a href="#rr">Review</a>
+            <!-- <a href="#">Pricing</a> -->
+        </div>
+        <button class="p-2 lg:hidden" onclick="handleMenu()"><i class="fa-solid fa-bars"
+                class="text-gray-600"></i></button>
+
+        <div class=" hidden fixed bg-white inset-0 p-3 z-10 md:hidden" id="nav-dialog">
+            <div id="nav-bar" class="flex justify-between">
+                <a href="#"><img src="./Images/footer-certificate-1.png" width="120px" height="30px" alt=""
+                        class="object-cover "></a>
+                <button class="p-2 md:hidden " onclick="handleMenu()"><i class="fa-solid fa-xmark"
+                        class="text-gray-600"></i></button>
+            </div>
+            <div class="mt-6 flex flex-col space-y-6">
+                <!-- <a href="#" class="hover:bg-green-600 rounded transition-all duration-200">Pricing</a> -->
+                <a href="#hh">Home</a>
+                <a href="#aa">About</a>
+                <a href="#rr">Review</a>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- stanford -->
+
+    <img width="100%" style="height: 85vh; background-attachment: fixed;"
+        src="https://3.bp.blogspot.com/-oIb7VuS4G5k/WXYDpcuxQGI/AAAAAAAAlew/Ml1yPqiZz3kjLT_xYvsDdPEg2QFch_siwCLcBGAs/s1600/Stanford%2BUniversity%2B7.jpg"
+        alt="">
+    <br>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- <img width="100vw" style="height: 85vh; object-fit: ;"  src="https://3.bp.blogspot.com/-oIb7VuS4G5k/WXYDpcuxQGI/AAAAAAAAlew/Ml1yPqiZz3kjLT_xYvsDdPEg2QFch_siwCLcBGAs/s1600/Stanford%2BUniversity%2B7.jpg" alt=""> -->
+            <marquee behavior="" direction="">
+                <p class="marqueeText"><strong> ___ The Winds of Freedom Blow __</strong></p>
+            </marquee>
+        </div>
+    </div><br>
+    <!-- About university -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-4 offset-1"><img class="imageHover1" style="border-radius: 10px;"
+                    src="https://amgenscholars.com/wp-content/uploads/2014/10/photo-stanford.jpg" alt=""></div>
+            <div class="mt-5 about1 col-5 offset-1">Stanford University is a private institution that was founded in
+                1885. It has a total undergraduate enrollment of 8,054 (fall 2023), and the campus size is 8,180 acres.
+                It utilizes a quarter-based academic calendar. Stanford University's ranking in the 2025 edition of Best
+                Colleges is National Universities, #4.</div>
+        </div><br><br>
+        <div class="row">
+            <div class="mt-5 about2 col-5 offset-1">In 1951, the university developed its Stanford Research Park to
+                house firms led by such innovators. Varian Associates became the first tenants. The Varian brothers and
+                William Hansen with the klystron. (Image credit: Stanford University Archives) The post-World War II era
+                saw many research advances.</div>
+            <div class="col-4 offset-1"><img class="imageHover2" style="border-radius: 10px;"
+                    src="https://2.bp.blogspot.com/-XxuMnedG1sQ/VuwWxjNJ2TI/AAAAAAAAADM/JP-OeOijPRAqCoUIeOpTtZSkFGinGTavw/s1600/Stanford%2BUniversity%2BCampus.jpg"
+                    alt=""></div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <!-- blog -->
+
+    <center>
+        <h1 class="blogSection">Blog Section</h1>
+    </center>
+
+    <br><br>
+
+    <!-- blog area -->
+
+    <!-- blog 1 -->
+    <div class="container">
+        <div class="row">
+            <!-- crousal -->
+            <div class="col-5" id="aa">
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner" style="border-radius: 10px;">
+                        <div class="carousel-item active">
+                            <img src="https://wallpapercave.com/wp/wp2017236.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://wallpapercave.com/wp/wp2017244.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www-media.stanford.edu/wp-content/uploads/2017/06/20191526/stanford-share.jpg"
+                                class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- about -->
+            <div class="col-5 parent offset-1">
+
+                <div class="div">
+                    <h2><b>Name: </b> Mark Wood</h2><br>
+                    <h2><b>Email: </b>Mark134@outlook.com</h2>
+                    <br>
+                    <p>Stanford University offers an exceptional academic environment with cutting-edge research
+                        opportunities and a vibrant campus life. The access to world-renowned faculty and a diverse,
+                        intellectually stimulating community are definite highlights.</p><br>
+                </div>
+
+
+
+            </div>
+
+        </div>
+        <br><br>
+        <div class="row" id="rr">
+            <br>
+            <h2><strong><i>Add Comment: </i></strong></h2>
+            <br>
+            <form action="">
+
+                <label for="name"><b>Name: </b></label>
+                <input type="text" id="name"
+                    style="background-color: rgb(230, 227, 227); border: 1px solid black; outline: none; border-radius: 5px;">
+                <br><br>
+                <label for="name"><b>Email: </b></label>
+                <input type="text" id="email"
+                    style="background-color: rgb(230, 227, 227); border: 1px solid black; outline: none; border-radius: 5px;">
+                <br><br>
+                <label for="review"><b>Review: </b></label>
+                <textarea name="" id="review"
+                    style="background-color: rgb(230, 227, 227); border: 1px solid black; border-radius: 5px;"></textarea><br>
+                <button class="btn submit bg-primary text-white">Submit</button>
+            </form>
+
+        </div>
+    </div>
+
+    <br><br>
+
+    <!-- blog2 -->
+
+    <div class="container">
+        <div class="row">
+            <!-- crousal -->
+            <div class="col-5" id="aa">
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner" style="border-radius: 10px;">
+                        <div class="carousel-item active">
+                            <img src="https://wallpapercave.com/wp/wp2017236.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://wallpapercave.com/wp/wp2017244.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www-media.stanford.edu/wp-content/uploads/2017/06/20191526/stanford-share.jpg"
+                                class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- about -->
+            <div class="col-5 parent offset-1">
+
+                <div class="div">
+                    <h2><b>Name: </b> Mark Wood</h2><br>
+                    <h2><b>Email: </b>Mark134@outlook.com</h2>
+                    <br>
+                    <p>Stanford University offers an exceptional academic environment with cutting-edge research
+                        opportunities and a vibrant campus life. The access to world-renowned faculty and a diverse,
+                        intellectually stimulating community are definite highlights.</p><br>
+                </div>
+
+
+
+            </div>
+
+        </div>
+        <br><br>
+        <div class="row" id="rr">
+            <br>
+            <h2><strong><i>Add Comment: </i></strong></h2>
+            <br>
+            <form action="">
+
+                <label for="name"><b>Name: </b></label>
+                <input type="text" id="name"
+                    style="background-color: rgb(230, 227, 227); border: 1px solid black; outline: none; border-radius: 5px;">
+                <br><br>
+                <label for="name"><b>Email: </b></label>
+                <input type="text" id="email"
+                    style="background-color: rgb(230, 227, 227); border: 1px solid black; outline: none; border-radius: 5px;">
+                <br><br>
+                <label for="review"><b>Review: </b></label>
+                <textarea name="" id="review"
+                    style="background-color: rgb(230, 227, 227); border: 1px solid black; border-radius: 5px;"></textarea><br>
+                <button class="btn submit bg-primary text-white">Submit</button>
+            </form>
+
+        </div>
+    </div>
+
+    <br><br>
+
+
+    <!-- js for navbar -->
+
+    <script>
+        const navdialog = document.getElementById('nav-dialog');
+        function handleMenu() {
+            navdialog.classList.toggle('hidden');
+
+        }
+
+        let btn = document.querySelector(".submit");
+        btn.addEventListener("click", (e) => {
+            e.preventDefault();
+            let name = document.querySelector("#name").value;
+            let email = document.querySelector("#email").value;
+            let text = document.querySelector("#review").value;
+            let parent = document.querySelector(".parent");
+
+            let userData=JSON.parse(localStorage.getItem("Reviews: ")) ?? [];
+            userData.push({
+                name:`${name}`,
+                email:`${email}`,
+                Review:`${text}`
+            });
+            localStorage.setItem("Reviews: ",JSON.stringify(userData));
+
+            let child=document.createElement("div");
+            child.innerHTML=`
+                    <h2><b>Name: </b> ${name}</h2><br>
+                    <h2><b>Email: </b>${email}</h2>
+                    <br>
+                    <p>${text}</p>
+            `;
+            parent.appendChild(child);
+            let br=document.createElement("br");
+            parent.appendChild(br);
+
+            // console.log(name," ",email," ",text);
+            name.value = "";
+            email.value = "";
+            text.value = "";
+        })
+
+
+    </script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
